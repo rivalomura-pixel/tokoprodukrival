@@ -38,11 +38,37 @@ main {
     padding-bottom: 20px;
 }
 
+/* Bungkus gambar supaya harga lama bisa ditaruh di atasnya */
+.gambar-produk {
+    position: relative;
+}
+
 .produk img {
     width: 100%;
     height: 500px;
     object-fit: cover;
     border-radius: 5px;
+}
+
+/* Harga lama di pojok kanan atas gambar */
+.harga-lama {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 13px;
+    color: #888;
+    text-decoration: line-through;
+}
+
+/* Harga baru di bawah gambar */
+.harga-baru {
+    color: #e63946;
+    font-weight: 600;
+    font-size: 16px;
+    margin: 8px 0;
 }
 
 .produk a {
@@ -51,6 +77,10 @@ main {
     color: white;
     text-decoration: none;
     border-radius: 3px;
+}
+
+.produk a:hover {
+    background-color: #45a049;
 }
 
 footer {
